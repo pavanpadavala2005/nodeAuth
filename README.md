@@ -2,7 +2,7 @@
 
 A complete **Node.js Authentication & Authorization** system built with **Express.js**, **MongoDB**, and **JWT**, featuring secure authentication, email verification, password recovery, OAuth login, role-based access control, and production-ready security practices.
 
-🌐 **Live Demo:** https://node-auth-tau.vercel.app/
+🌐 **Live Demo:** https://node-auth-2tjc.vercel.app
 
 ---
 
@@ -80,9 +80,9 @@ Node-Auth/
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/node-auth.git
+https://github.com/pavanpadavala2005/nodeAuth
 
-cd node-auth
+cd nodeAuth
 ```
 
 ---
@@ -153,7 +153,7 @@ http://localhost:3000
 or
 
 ```
-https://node-auth-tau.vercel.app/
+https://node-auth-2tjc.vercel.app
 ```
 
 ---
