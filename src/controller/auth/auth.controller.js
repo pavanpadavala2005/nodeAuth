@@ -23,23 +23,13 @@ import { generateSecret, generateURI, verify as verifyTwoFactorCode } from "otpl
 import { deleteQRCode, generateQRCode, getQRCodePath } from "../../utils/qrCode.js";
 
 const getAppUrl = () => {
-<<<<<<< HEAD
 	// return process.env.APP_URL;
 	return `http://localhost:3000`;
-=======
-	return process.env.APP_URL || `http://localhost:${process.env.PORT || 3000}`;
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 };
 
 // Google Authentication
 import { getGoogleClient } from "../../utils/googleAuth.js";
 
-<<<<<<< HEAD
-=======
-// Facebook
-import passport from "passport";
-
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 import { comparePassword, hashPassword } from "../../utils/hash.js";
 
 export const registerHandler = async (req, res) => {
@@ -74,12 +64,8 @@ export const registerHandler = async (req, res) => {
 
 		const verifyToken = createVerifyToken(newlyCreatedUser.id);
 
-<<<<<<< HEAD
 		// const verifyUrl = `${getAppUrl()}/auth/verify-email?token=${verifyToken}`;
 		const verifyUrl = `http://localhost:3000/auth/verify-email?token=${verifyToken}`;
-=======
-		const verifyUrl = `${getAppUrl()}/auth/verify-email?token=${verifyToken}`;
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 		await sendEmail(
 			newlyCreatedUser.email,
 			"Verify your email",
