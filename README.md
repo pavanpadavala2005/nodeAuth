@@ -288,3 +288,88 @@ This project is licensed under the MIT License.
 ---
 
 ⭐ If you found this project useful, don't forget to **star the repository!**
+
+
+# 📸 Application Screenshots
+
+## 1️⃣ Home Page
+
+![Home Page](images/01.png)
+
+---
+
+## 2️⃣ Register Page
+
+![Register](images/02.png)
+
+---
+
+## 3️⃣ Login Page
+
+![Login](images/03.png)
+
+---
+
+## 4️⃣ Email Verification
+
+![Email Verification](images/04.png)
+
+---
+
+## 5️⃣ Forgot Password
+
+![Forgot Password](images/05.png)
+
+---
+
+## 6️⃣ Reset Password
+
+![Reset Password](images/06.png)
+
+---
+
+## 7️⃣ User Profile
+
+![User Profile](images/07.png)
+
+---
+
+## 8️⃣ Admin Dashboard
+
+![Admin Dashboard](images/08.png)
+
+---
+
+## 9️⃣ Google OAuth
+
+![Google OAuth](images/09.png)
+
+---
+
+## 🔟 Facebook OAuth
+
+![Facebook OAuth](images/10.png)
+
+---
+
+## 1️⃣1️⃣ Protected Route
+
+![Protected Route](images/11.png)
+
+---
+
+## 1️⃣2️⃣ All Users API
+
+![All Users API](images/12.png)
+
+---
+
+## 1️⃣3️⃣ Health Check
+
+![Health Check](images/13.png)
+
+---
+
+## 1️⃣4️⃣ API Documentation
+
+![API Documentation](images/14.png)
