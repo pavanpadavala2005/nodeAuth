@@ -23,13 +23,23 @@ import { generateSecret, generateURI, verify as verifyTwoFactorCode } from "otpl
 import { deleteQRCode, generateQRCode, getQRCodePath } from "../../utils/qrCode.js";
 
 const getAppUrl = () => {
+<<<<<<< HEAD
 	// return process.env.APP_URL;
 	return `http://localhost:3000`;
+=======
+	return process.env.APP_URL || `http://localhost:${process.env.PORT || 3000}`;
+>>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 };
 
 // Google Authentication
 import { getGoogleClient } from "../../utils/googleAuth.js";
 
+<<<<<<< HEAD
+=======
+// Facebook
+import passport from "passport";
+
+>>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 import { comparePassword, hashPassword } from "../../utils/hash.js";
 
 export const registerHandler = async (req, res) => {
@@ -64,8 +74,12 @@ export const registerHandler = async (req, res) => {
 
 		const verifyToken = createVerifyToken(newlyCreatedUser.id);
 
+<<<<<<< HEAD
 		// const verifyUrl = `${getAppUrl()}/auth/verify-email?token=${verifyToken}`;
 		const verifyUrl = `http://localhost:3000/auth/verify-email?token=${verifyToken}`;
+=======
+		const verifyUrl = `${getAppUrl()}/auth/verify-email?token=${verifyToken}`;
+>>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 		await sendEmail(
 			newlyCreatedUser.email,
 			"Verify your email",
@@ -389,6 +403,7 @@ export const resetPasswordHandle = async (req, res) => {
 	}
 };
 
+<<<<<<< HEAD
 export const changePasswordHandler = async (req, res) => {
 	const user = req.user;
 	if (!user) {
@@ -447,6 +462,19 @@ export const changePasswordHandler = async (req, res) => {
 		await existingUser.save();
 
 		return res.status(200).json({ message: "Password changed successfully" });
+=======
+export const googleAuthStartHandler = (req, res) => {
+	try {
+		const client = getGoogleClient();
+
+		const url = client.generateAuthUrl({
+			access_type: "offline",
+			prompt: "consent",
+			scope: ["openid", "email", "profile"],
+		});
+
+		return res.redirect(url);
+>>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 	} catch (error) {
 		console.log(error);
 		res.status(500).json({ message: "Internal server error" });
@@ -549,6 +577,7 @@ export const googleCallbackHandler = async (req, res) => {
 	}
 };
 
+<<<<<<< HEAD
 export const googleAuthStartHandler = (req, res) => {
 	try {
 		const client = getGoogleClient();
@@ -566,6 +595,8 @@ export const googleAuthStartHandler = (req, res) => {
 	}
 };
 
+=======
+>>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 export const facebookCallbackHandler = async (req, res) => {
 	if (!req.user) {
 		return res.status(401).json({ message: "Facebook authentication failed" });
