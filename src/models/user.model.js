@@ -1,9 +1,4 @@
 import mongoose from "mongoose";
-<<<<<<< HEAD
-=======
-import { boolean } from "zod";
-import { lowercase, required } from "zod/mini";
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 
 const userSchema = new mongoose.Schema(
 	{

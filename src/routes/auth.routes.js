@@ -15,10 +15,7 @@ import {
 	getNewVerifyEmailHandler,
 	facebookCallbackHandler,
 	getTwoFactorQrHandler,
-<<<<<<< HEAD
 	changePasswordHandler,
-=======
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 } from "../controller/auth/auth.controller.js";
 
 import requireAuth from "../middlewares/requireAuth.js";
@@ -34,10 +31,7 @@ router.get("/verify-email", verifyEmailHandler);
 
 router.post("/forgot-password", forgotPasswordHandler);
 router.post("/reset-password", resetPasswordHandle);
-<<<<<<< HEAD
 router.post("/change-password", requireAuth, changePasswordHandler);
-=======
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 
 router.post("/refresh", requireAuth, refreshHandler);
 router.post("/logout", requireAuth, logOutHandler);

@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 import "./config/env.js";
 
 import http from "http";
 
-=======
-import http from "http";
-
-import "./config/env.js";
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 import "./utils/facebookAuth.js";
 
 import app from "./app.js";

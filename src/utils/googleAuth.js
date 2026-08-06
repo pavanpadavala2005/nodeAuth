@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 import "../config/env.js";
-=======
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 import { OAuth2Client } from "google-auth-library";
 
 export const getGoogleClient = () => {

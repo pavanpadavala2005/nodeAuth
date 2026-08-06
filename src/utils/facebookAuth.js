@@ -1,10 +1,6 @@
 import passport from "passport";
 import { Strategy as FacebookStrategy } from "passport-facebook";
 
-<<<<<<< HEAD
-=======
-// export const initFacebookAuth = () => {
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 passport.use(
 	new FacebookStrategy(
 		{
@@ -22,7 +18,3 @@ passport.use(
 		}
 	)
 );
-<<<<<<< HEAD
-=======
-// };
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7

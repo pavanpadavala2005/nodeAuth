@@ -389,7 +389,6 @@ export const resetPasswordHandle = async (req, res) => {
 	}
 };
 
-<<<<<<< HEAD
 export const changePasswordHandler = async (req, res) => {
 	const user = req.user;
 	if (!user) {
@@ -448,19 +447,6 @@ export const changePasswordHandler = async (req, res) => {
 		await existingUser.save();
 
 		return res.status(200).json({ message: "Password changed successfully" });
-=======
-export const googleAuthStartHandler = (req, res) => {
-	try {
-		const client = getGoogleClient();
-
-		const url = client.generateAuthUrl({
-			access_type: "offline",
-			prompt: "consent",
-			scope: ["openid", "email", "profile"],
-		});
-
-		return res.redirect(url);
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 	} catch (error) {
 		console.log(error);
 		res.status(500).json({ message: "Internal server error" });
@@ -563,7 +549,6 @@ export const googleCallbackHandler = async (req, res) => {
 	}
 };
 
-<<<<<<< HEAD
 export const googleAuthStartHandler = (req, res) => {
 	try {
 		const client = getGoogleClient();
@@ -581,8 +566,6 @@ export const googleAuthStartHandler = (req, res) => {
 	}
 };
 
-=======
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 export const facebookCallbackHandler = async (req, res) => {
 	if (!req.user) {
 		return res.status(401).json({ message: "Facebook authentication failed" });

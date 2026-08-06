@@ -25,7 +25,6 @@ export const getAllUsers = async (req, res) => {
 	}
 };
 
-<<<<<<< HEAD
 export const getUserInfo = async (req, res) => {
 	const { userId } = req.params;
 	if (!userId) {
@@ -80,18 +79,12 @@ export const deleteUser = async (req, res) => {
 	}
 };
 
-=======
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 export const getProfile = async (req, res) => {
 	if (!req.user) {
 		return res.status(400).json({
 			message: "details not found",
 		});
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
 	try {
 		return res.status(200).json({
 			user: req.user,

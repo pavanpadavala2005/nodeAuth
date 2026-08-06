@@ -8,23 +8,23 @@ A complete **Node.js Authentication & Authorization** system built with **Expres
 
 ## ✨ Features
 
-- ✅ User Registration
-- ✅ User Login
-- ✅ JWT Authentication (Access & Refresh Tokens)
-- ✅ Email Verification
-- ✅ Resend Verification Email
-- ✅ Forgot Password
-- ✅ Reset Password
-- ✅ Google OAuth Login
-- ✅ Facebook OAuth Login
-- ✅ Protected Routes
-- ✅ Role-Based Authorization (User/Admin)
-- ✅ Admin Dashboard APIs
-- ✅ Secure Password Hashing (bcrypt)
-- ✅ HTTP-Only Cookies
-- ✅ Centralized Error Handling
-- ✅ Environment Variable Configuration
-- ✅ RESTful API Architecture
+-   ✅ User Registration
+-   ✅ User Login
+-   ✅ JWT Authentication (Access & Refresh Tokens)
+-   ✅ Email Verification
+-   ✅ Resend Verification Email
+-   ✅ Forgot Password
+-   ✅ Reset Password
+-   ✅ Google OAuth Login
+-   ✅ Facebook OAuth Login
+-   ✅ Protected Routes
+-   ✅ Role-Based Authorization (User/Admin)
+-   ✅ Admin Dashboard APIs
+-   ✅ Secure Password Hashing (bcrypt)
+-   ✅ HTTP-Only Cookies
+-   ✅ Centralized Error Handling
+-   ✅ Environment Variable Configuration
+-   ✅ RESTful API Architecture
 
 ---
 
@@ -32,26 +32,26 @@ A complete **Node.js Authentication & Authorization** system built with **Expres
 
 ### Backend
 
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
+-   Node.js
+-   Express.js
+-   MongoDB
+-   Mongoose
 
 ### Authentication
 
-- JSON Web Token (JWT)
-- Google OAuth 2.0
-- Facebook OAuth
-- bcrypt
+-   JSON Web Token (JWT)
+-   Google OAuth 2.0
+-   Facebook OAuth
+-   bcrypt
 
 ### Email
 
-- Nodemailer
+-   Nodemailer
 
 ### Validation & Security
 
-- Cookie Parser
-- dotenv
+-   Cookie Parser
+-   dotenv
 
 ---
 
@@ -160,34 +160,34 @@ https://node-auth-2tjc.vercel.app
 
 # Authentication Routes
 
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| GET | `/health` | Check server health |
-| POST | `/auth/register` | Register a new user |
-| POST | `/auth/login` | Login user |
-| POST | `/auth/resend-verification-email` | Resend verification email |
-| GET | `/auth/verify-email` | Verify email |
-| POST | `/auth/forgot-password` | Request password reset |
-| POST | `/auth/reset-password` | Reset password |
-| GET | `/auth/google` | Google OAuth Login |
-| GET | `/auth/facebook` | Facebook OAuth Login |
+| Method | Endpoint                          | Description               |
+| ------ | --------------------------------- | ------------------------- |
+| GET    | `/health`                         | Check server health       |
+| POST   | `/auth/register`                  | Register a new user       |
+| POST   | `/auth/login`                     | Login user                |
+| POST   | `/auth/resend-verification-email` | Resend verification email |
+| GET    | `/auth/verify-email`              | Verify email              |
+| POST   | `/auth/forgot-password`           | Request password reset    |
+| POST   | `/auth/reset-password`            | Reset password            |
+| GET    | `/auth/google`                    | Google OAuth Login        |
+| GET    | `/auth/facebook`                  | Facebook OAuth Login      |
 
 ---
 
 # User Routes
 
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| GET | `/user/me` | Get logged-in user's profile |
+| Method | Endpoint   | Description                  |
+| ------ | ---------- | ---------------------------- |
+| GET    | `/user/me` | Get logged-in user's profile |
 
 ---
 
 # Admin Routes
 
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| GET | `/admin/all-users` | Get all users *(Admin Only)* |
-| GET | `/admin/me` | Get admin profile |
+| Method | Endpoint           | Description                  |
+| ------ | ------------------ | ---------------------------- |
+| GET    | `/admin/all-users` | Get all users _(Admin Only)_ |
+| GET    | `/admin/me`        | Get admin profile            |
 
 ---
 
@@ -216,16 +216,16 @@ Protected APIs
 
 # 🔐 Security Features
 
-- Password hashing using **bcrypt**
-- JWT Access & Refresh Tokens
-- Email verification before login
-- Password reset via secure email link
-- HTTP-only cookies
-- Role-based authorization
-- Environment variables for secrets
-- Protected API routes
-- Input validation
-- Centralized error handling
+-   Password hashing using **bcrypt**
+-   JWT Access & Refresh Tokens
+-   Email verification before login
+-   Password reset via secure email link
+-   HTTP-only cookies
+-   Role-based authorization
+-   Environment variables for secrets
+-   Protected API routes
+-   Input validation
+-   Centralized error handling
 
 ---
 
@@ -239,7 +239,7 @@ Response
 
 ```json
 {
-  "success": true,
+	"success": true
 }
 ```
 
@@ -282,17 +282,16 @@ This project is licensed under the MIT License.
 
 **Pavan Kumar Padavala**
 
-- GitHub: https://github.com/pavanpadavala2005
-- LinkedIn: https://linkedin.com/in/pavan-kumar-padavala/
+-   GitHub: https://github.com/pavanpadavala2005
+-   LinkedIn: https://linkedin.com/in/pavan-kumar-padavala/
 
 ---
 
 ⭐ If you found this project useful, don't forget to **star the repository!**
 
-
 # 📸 Application Screenshots
 
-## 1️⃣ Home Page
+## 1️⃣ Health Check
 
 ![Home Page](images/01.png)
 
@@ -310,66 +309,60 @@ This project is licensed under the MIT License.
 
 ---
 
-## 4️⃣ Email Verification
+## 4️⃣ Email received to Mail
 
 ![Email Verification](images/04.png)
 
 ---
 
-## 5️⃣ Forgot Password
+## 5️⃣ Email verified
 
 ![Forgot Password](images/05.png)
 
 ---
 
-## 6️⃣ Reset Password
+## 6️⃣ Login with verified Email and Password
 
 ![Reset Password](images/06.png)
 
 ---
 
-## 7️⃣ User Profile
+## 7️⃣ Getting Access Token from Refresh Token
 
 ![User Profile](images/07.png)
 
 ---
 
-## 8️⃣ Admin Dashboard
+## 8️⃣ Getting User Profile Details
 
 ![Admin Dashboard](images/08.png)
 
 ---
 
-## 9️⃣ Google OAuth
+## 9️⃣ 2FA Setup
 
 ![Google OAuth](images/09.png)
 
 ---
 
-## 🔟 Facebook OAuth
+## 🔟 2FA QR Generation
 
 ![Facebook OAuth](images/10.png)
 
 ---
 
-## 1️⃣1️⃣ Protected Route
+## 1️⃣1️⃣ 2FA Disable
 
 ![Protected Route](images/11.png)
 
 ---
 
-## 1️⃣2️⃣ All Users API
+## 1️⃣2️⃣ 2FA Enable
 
 ![All Users API](images/12.png)
 
 ---
 
-## 1️⃣3️⃣ Health Check
+## 1️⃣3️⃣ Facebook Authentication
 
 ![Health Check](images/13.png)
-
----
-
-## 1️⃣4️⃣ API Documentation
-
-![API Documentation](images/14.png)

@@ -42,11 +42,7 @@ app.get("/", (req, res) => {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
             <title>Welcome to Node Authentication</title>
-=======
-            <title>API Routes</title>
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
             <style>
                 body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
                 table { width: 100%; border-collapse: collapse; margin-top: 20px; }
@@ -55,13 +51,8 @@ app.get("/", (req, res) => {
             </style>
         </head>
         <body>
-<<<<<<< HEAD
             <h1>Welcome to Node js Authentication</h1>
             <p>Below is a list of all available routes and endpoints and their descriptions:</p>
-=======
-            <h1>API Routes</h1>
-            <p>Below is a list of all available routes and their descriptions:</p>
->>>>>>> f5e244b5bebe629970d13e9d55233a3d7c0f13b7
             <table>
                 <thead>
                     <tr>
