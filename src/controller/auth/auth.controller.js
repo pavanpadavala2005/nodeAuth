@@ -23,7 +23,8 @@ import { generateSecret, generateURI, verify as verifyTwoFactorCode } from "otpl
 import { deleteQRCode, generateQRCode, getQRCodePath } from "../../utils/qrCode.js";
 
 const getAppUrl = () => {
-	return process.env.APP_URL;
+	// return process.env.APP_URL;
+	return `http://localhost:3000`;
 };
 
 // Google Authentication
@@ -63,7 +64,8 @@ export const registerHandler = async (req, res) => {
 
 		const verifyToken = createVerifyToken(newlyCreatedUser.id);
 
-		const verifyUrl = `${getAppUrl()}/auth/verify-email?token=${verifyToken}`;
+		// const verifyUrl = `${getAppUrl()}/auth/verify-email?token=${verifyToken}`;
+		const verifyUrl = `http://localhost:3000/auth/verify-email?token=${verifyToken}`;
 		await sendEmail(
 			newlyCreatedUser.email,
 			"Verify your email",
